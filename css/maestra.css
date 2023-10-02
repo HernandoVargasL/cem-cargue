@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'Tajawal-Regular';
+    src: url(../../fonts/Tajawal-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal-Medium';
+    src: url(../../fonts/Tajawal-Regular.ttf);
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tajawal-Bold';
+    src: url(../../fonts/Tajawal-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* variables */
+:root {
+    --rojo-colombia: #DF0D1A;
+    --azul-igac: #3169AF;
+    --azul_claro-igac: #e7f1ff;
+    --azul_oscuro-igac: #234570;       
+    --gris: #616161;    
+}
+
+/* reset */
+ul {
+    list-style: none;    
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Tajawal-Regular' !important;
+}
+
+body  a {
+    color: #000;
+    text-decoration: inherit;
+}
+
+body  a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: var(--gris);
+    line-height: normal;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.title-section {
+    font-size: 2rem;
+    color: var(--azul-igac);    
+    font-family: 'Tajawal-Bold';
+    margin-bottom: 1.5rem;
+}
+
+.sub-title {
+    font-size: 1.3rem;
+    color: var(--azul-igac);
+    line-height: 1;
+}
+
+.btn-default {
+    color: #fff !important;
+    border-radius: 50px !important;
+    line-height: 1;
+    background-color: var(--azul-igac) !important;
+    padding-top: 9px !important;
+    font-size: 0.9rem !important;
+}
+
+#loginBtn {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#loginBtn #userPhoto {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border-radius: 35px;
+}
+
+/* banner */
+.banner .card {
+    flex-direction: inherit !important;
+    box-shadow: 0 0 17px -6px #00000075;
+    border: 0;
+}
+
+.banner .illustration {
+    background: var(--azul_oscuro-igac);
+    display: flex;
+    align-items: center;
+}
+
+.banner .illustration img {
+    height: auto;
+}
+
+/* cover */
+.cover {
+    background: #f2efe9;
+}
+
+.cover::before {
+    content: "";
+    top: 40px;
+    background: url(/images/assets/triangleBlue.svg);
+    width: 418px;
+    height: 624px;
+    display: flex;
+    position: absolute;
+    right: 0px;
+}
+
+.cover .container {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: var(--azul-igac);    
+}
+
+.cover .img-container {
+    display: flex;
+}
+
+.cover .img-container img {
+    width: 80%;
+    margin-left: auto;
+}
+
+.cover .sub-title__cover {
+    color: var(--rojo-colombia);
+    margin-bottom: 20px;
+}
+
+.cover .title__cover {
+    line-height: 1;
+    font-family: 'Tajawal-Bold';
+    margin-top: 0;
+}
+
+.cover .resume__cover {
+    font-size: 1rem;
+}
+
+/* triangle */
+.trinagle {
+    position: absolute;
+    left: 0;
+    width: 75px;
+    height: 221px;
+    margin-top: -80px;
+}
+
+/*tabs*/
+.steps {
+    background: #f2efe9;
+    padding: 30px 30px !important;
+}
+
+.steps .title-section {
+    font-family: 'Gill Sans';
+}
+
+
+.step {
+    opacity: 0;
+    transition: opacity 1s; /* adjust the time as needed */
+    display: none; /* this ensures the step is not shown initially */
+}
+
+.step p {
+    margin-bottom: 20px;
+}
+
+.step .img-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/*buttons*/
+.buttons button {
+    background: inherit;
+    text-align: inherit;
+    border: none;    
+    margin: 10px 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.buttons button:focus {
+    outline: none;
+}
+
+.buttons button span {
+    color: #fff;
+    background-color: #b5b5b4;
+    font-size: 14px;
+    min-width: 35px;
+    min-height: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+
+.buttons button.pressed {
+    color: #000;
+}
+
+.buttons button.pressed span {
+    background-color: #3169af;
+}
+
+.buttons button.pressedhover span {
+    background-color: #3169af;
+}
+
+.buttons button.active span { 
+    background-color: #3169af;   
+    font-family: Tajawal;
+}
+
+.buttons button.active {
+    color: #3169af;
+    font-family: Tajawal-Bold;
+}
+
+/* pasos para la oficialización */
+.title-text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.title-text h2 {
+    margin-bottom: 10px;
+}
+
+.container-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container-tabs {
+    align-items: center;
+}
+
+.tab-butons  button {
+    width: 100%;
+    border: 0;
+    background: var(--azul_claro-igac);    
+    text-align: inherit;
+    padding: 16px 20px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.tab-butons  button:last-child {
+    box-shadow: none;
+}
+
+.tab-butons  button:last-child {
+    margin-bottom: 0;
+}
+
+.tab-butons  button:focus {
+    outline: none;
+}
+
+.tab-butons  button p {
+    padding-top: 4px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: var(--azul-igac);
+}
+
+.colombiaMapas .tab-butons  button p {
+    line-height: 23px;
+    height: auto;
+}
+
+.tab-butons  button:hover {
+    color: #3595e0;
+}
+
+.tab-butons  .but {
+    border-left: 0;
+}
+
+.tab-butons  .but .fas {
+    font-size: 0.7rem;
+    color: var(--azul-igac);
+    display: flex;
+    align-items: center;
+}
+
+.tab-content .tematicas-item-img {
+    width: 460px;
+}
+
+.tab-content .item {
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.tab-content .item img {
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-bottom .arrow::before  {
+    border-bottom-color: #b5b5b4 !important;
+    text-shadow: 4px 3px 5px #000000ab;
+}
+
+.tooltip-inner {
+    background-color: #b5b5b4 !important;
+    color: #000 !important;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    80% {
+      transform: translateY(-5px);
+    }
+}
+  
+.bounce-tooltip {
+    animation: bounce 0.6s;
+}
+  
+
+/* querys */
+@media (max-width: 1024px) {
+    /* cover */
+    .cover .title__cover {
+        font-size: 2rem;
+    }
+    .cover::before {
+        top: 84px;
+        width: 298px;
+        height: 444px;
+    }
+}
+@media (max-width: 768px) {
+    /* reset */
+    section {
+        margin-bottom: 50px;
+    }   
+
+    /* cover */
+    .cover {
+        height: 300px;
+    }
+
+    .cover .container {
+        height: 100%;  
+    }
+
+    .cover .title__cover {
+        font-size: 1.5rem;
+    }
+    .cover::before {
+        top: 84px;
+        width: 208px;
+        height: 311px;
+    }
+
+    .bs-tooltip-bottom {
+        display: none !important;
+    }
+
+    /* pasos para la oficialización */
+    .trinagle {
+        position: absolute;
+        left: 0;
+        width: 64px;
+        height: 174px;
+        margin-top: -80px;
+    }
+
+    .buttons button span {
+        min-width: 30px;
+        min-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .title-text {
+        margin-bottom: 30px;
+    }
+
+    .title-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .title-section {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* reset */
+    section {
+        margin-bottom: 30px;
+    }
+    .title-section {
+        font-size: 1.3rem;
+    }
+
+    /* cover */
+    .cover {
+        height: 320px;
+    }
+
+    .cover::before {
+        display: none;
+    }
+
+    .cover .sub-title__cover {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .cover .title__cover {
+        font-size: 1.3rem;
+    }
+
+    /* pasos para la oficialización */
+    .trinagle {
+        width: 40px;
+    }
+
+    .wizard .buttons {
+        display: flex;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .buttons button {
+        min-width: 150px;
+    }
+
+    .buttons button span {
+        min-width: 25px;
+        min-height: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+}

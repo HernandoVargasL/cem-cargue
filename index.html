@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177680669-1"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="description" content="Colombia en Mapas, un atlas vivo. Conoce, descarga y comparte  los mapas oficiales de la República de Colombia." />
+        <meta name="title" property="og:title" content="Colombia en Mapas">
+        <meta property="og:type" content="website">
+        <meta name="image" property="og:image" content="https://www.colombiaenmapas.gov.co/images/Preview.png">
+        <meta name="keywords" content="mapa, mapas, Colombia, atlas, imágenes, cartografía, municipio, departamento, catastro, oficial, IGAC" />
+        <meta name="author" content="Instituto Geográfico Agustín Codazzi - IGAC" />
+        <meta http-equiv="content-language" content="es" />
+        <link rel="canonical" href="http://www.colombiaenmapas.gov.co" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <title>Colombia en mapas</title>
+        <link rel="stylesheet" href="/css/navbar-footer.css">
+        <link rel="stylesheet" href="/css/maestra.css">
+
+        <!-- font awesome -->        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">  
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+<body>
+    <!-- header -->
+    <div class="barra_gov">
+        <a class="logo-gov" href="https://www.gov.co/home/" target="_blank">
+            <img alt="Logo Gov.co" src="/images/nav/header_govco.png">
+        </a>
+    </div>
+    <nav>
+        <div class="navbarigac">
+            <div class="logos">
+                <a href="https://www.igac.gov.co" class="navbar-brand-igac" target="_blank">
+                    <img alt="Logo IGAC" src="/images/nav/logo.png">
+                </a>
+                <img src="/images/nav/cem.svg" alt="Colombia en Mapas">
+            </div>
+            <ul id="link-list">
+                <li>
+                    <a href="#" rel="noopener">Inicio</a>
+                </li>
+                <li>
+                    <a href="/" rel="noopener">Plataforma</a>
+                </li>
+                <li>
+                    <a id="loginBtn" onclick="gotoLogin();">
+                        <img id="userPhoto" src="https://lh3.googleusercontent.com/a-/AFdZucokzgv5TtlO5b4T2Vm9u594lTxKrKSZNZwgKumRiw=s96-c" onerror="defaultUserPhoto();" alt="Iniciar sesion">
+                        <span id="userName" style="display: none;">Hernando Vargas</span>
+                    </a>                    
+                </li>
+            </ul>
+            <button class='nav-bar-toggle-igac'>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+                <div class='icon-bar'></div>
+            </button>
+        </div>
+        <div class='navbarnavigac'>            
+        </div>
+    </nav>
+    <!-- portada -->
+    <section class="cover">
+        <div class="container">
+            <div class="text col-12 col-md-7 col-lg-6 p-0">
+                <h1 class="title__cover">
+                    Portal web para la radicación, validación y oﬁcialización de la cartografía básica del país.
+                </h1>
+                <h5 class="resume__cover">
+                    ¡Te damos la más cordial bienvenida a nuestro portal web diseñado especíﬁcamente para facilitar el proceso de radicación, validación y oﬁcialización de la cartografía básica de nuestro país! Este espacio ha sido creado con el objetivo de simpliﬁcar y agilizar todos los trámites relacionados con la cartografía básica, brindándote un acceso conveniente y eﬁciente a todas las herramientas y recursos necesarios para llevar a cabo estas tareas de manera efectiva.
+                </h5>
+            </div>
+            <div class="img-container col-0 col-md-5 col-lg-6">
+                <img src="/images/assets/coverCargue.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- pasos para la oficialización -->
+    <div class="container">
+        <div class="trinagle">
+            <img src="images/assets/triangleOrange.svg" alt="">
+        </div>
+        <section class="tematicas">
+            <div class="title-text">
+                <h2 class="title-section">
+                    Pasos para la Oﬁcialización
+                </h2>
+                <p>
+                    Estos son los pasos que deberás seguir para radicar tus productos cartográﬁcos 
+                </p>
+            </div>
+            <div class="wizard row">
+                <div class="buttons col-md-4 col-lg-3">
+                    <button id="button1"><span class="numero">1</span>Iniciar Sesión</button>
+                    <button id="button2"><span class="numero">2</span>Diligenciar Formulario</button>
+                    <button id="button3"><span class="numero">3</span>Cargar Archivos</button>
+                    <button id="button4"><span class="numero">4</span>Radicado en el Correo</button>
+                    <hr>
+                    <button id="button5"><span class="numero">5</span>Estado de validación</button>
+                    
+                    <button id="button6"><span class="numero">6</span>Correo de validación</button>
+                    
+                    <button id="button7"><span class="numero">7</span>Producto Aprobado</button>
+                    
+                    <button id="button8"><span class="numero">8</span>Producto No Conforme</button>                    
+                </div>
+                <div class="steps col-md-8 col-lg-9">
+                    <div class="step" id="step1">
+                        <h2 class="title-section mb-0">Iniciar Sesión</h2>
+                        <p>
+                            Inicia sesión con tu usuario y contraseña para acceder a la plataforma. Una vez dentro,
+                            podrás registrar tus productos y seguir en tiempo real el estado de su validación.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                        <button class="btn btn-default" id="login-advice">Iniciar Sesión</button>
+                    </div>
+            
+                    <div class="step" id="step2">
+                        <h2 class="title-section mb-0">Diligenciar Formulario</h2>
+                        <p>
+                            Diligencia el formulario con los datos del producto cartográfico que deseas radicar
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                        <a href="#" onclick="window.open('https://www.colombiaenmapas.gov.co', '_blank'); return false;" class="btn btn-default">Visitar la plataforma</a>
+                    </div>
+            
+                    <div class="step" id="step3">
+                        <h2 class="title-section mb-0">Cargar Archivos</h2>
+                        <p>
+                            Al final del formulario encontrarás el espacio para cargar los archivos con los productos cartográficos a validar y sus respectivos anexos, recuerda que; todo producto externo que requiera surtir el proceso de validación y oficialización de productos cartográficos debe tener en cuenta los lineamientos dispuestos en la resolución 1421 de 2021.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                        <a href="#" onclick="window.open('https://www.colombiaenmapas.gov.co', '_blank'); return false;" class="btn btn-default">Visitar la plataforma</a>
+                    </div>
+            
+                    <div class="step" id="step4">
+                        <h2 class="title-section mb-0">Radicado en el Correo</h2>
+                        <p>
+                            Al culminar el proceso de radicación, recibirás un correo electrónico con el número de radicado correspondiente.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step5">
+                        <h2 class="title-section mb-0">Estado de validación</h2>
+                        <p>
+                            Puedes consultar el estado de tu validación ingresando al portal y con el número de radicado podrás hacer seguimiento en tiempo real del estado de la validación de tu producto.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step6">
+                        <h2 class="title-section mb-0">Correo de validación</h2>
+                        <p>
+                            Una vez completado el proceso de validación, recibirá un correo electrónico que incluirá el resultado de la validación y los pasos a seguir.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step7">
+                        <h2 class="title-section mb-0">Producto Aprobado</h2>
+                        <p>
+                            En caso de que tu producto sea aprobado, podrá descargar el acta, el informe y el reporte de calidad correspondientes utilizando tu usuario y contraseña.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step8">
+                        <h2 class="title-section mb-0">Producto No Conforme</h2>
+                        <p>
+                            En caso de que tu producto no cumpla con las especificaciones técnicas requeridas, tendrás la opción de descargar el informe, el reporte y el GDB de observaciones ingresando con tu usuario y contraseña.
+                        </p>
+                        <div class="img-container">
+                            <img src="images/assets/iniciar-sesion-img.png" alt="inicio">
+                        </div>
+                    </div>
+                </div>                
+            </div> 
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="containerf">
+            <div class="footer-container">
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="footer-titulo">Instituto Geográfico Agustín Codazzi - IGAC</h2>
+                    </div>
+                    <div class="logos-footer col-md-6f">&nbsp;</div>
+                </div>
+                <div class="rowf">
+                    <div class="col-md-6f">
+                        <h2 class="sub-titulo-sede-gov-co">Información sede principal</h2>
+                    
+                        <h3>Dirección:</h3> 
+                        <p>Bogotá D.C. - Carrera 30 # 48-51</p>
+                    
+                        <h3>Horarios de atención al ciudadano:</h3>
+                        <p>Abierto al público de lunes a viernes de 9:00 a.m. a 4:00 p.m. jornada continua Sede Central y territorial Cundinamarca (Horario de atención temporal acatando las medidas y demás regulaciones de bioseguridad)</p>
+                        <h3>Teléfono Conmutador:</h3>
+                        <p>
+                            <a href="tel:6016531888">+57 601 653 18 88</a>
+                        </p>
+                        <h3>Correo de contacto:</h3>
+                        <p>
+                            <a href="mailto:contactenos@igac.gov.co">contactenos@igac.gov.co</a>
+                        </p>
+                    
+                        <h3>Correo de notificaciones judiciales:</h3>
+                        <p>
+                            <a href="mailto:judiciales@igac.gov.co">judiciales@igac.gov.co</a>
+                        </p>
+                        <p>NIT: 8999990049</p>
+                    
+                        <p>©Copyright 2021 - Todos los derechos reservados Gobierno de Colombia</p>
+                    </div>                
+                    <div class="col-md-6f">
+                        <h3>Contáctenos en nuestras redes sociales</h3>
+                    
+                        <div class="redes-sociales">
+                            <p>
+                                <a href="https://www.facebook.com/IgacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Facebook IGAC" class="icono-redes" src="/images/footer/facebook.svg">
+                                    Facebook IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://twitter.com/igacColombia" tabindex="-1" target="_blank">
+                                    <img alt="Visitar Twitter IGAC" class="icono-redes" src="/images/footer/twitter.svg">
+                                    Twitter IGAC 
+                                </a>
+                            </p>
+                    
+                            <p>
+                                <a href="https://www.instagram.com/accounts/login/?next=/igacColombia/" tabindex="-1" target="_blank"><img alt="Visitar Instagram IGAC" class="icono-redes" src="/images/footer/instagram.svg">
+                                    Instagram IGAC 
+                                </a>
+                            </p>
+                        </div>                    
+                        <div class="footer-enlaces"><a class="btn-low">Políticas</a> 
+                            <a class="btn-low">Mapa del sitio</a> 
+                            <a class="btn-low">Términos y condiciones</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gov-co-footer-pie">
+            <div class="gov-co-footer-auto containerf">
+                <img alt="Logo marca de Colombia" class="gov-co-logo-pie-blanco" src="/images/footer/marca_colombia.png">
+
+                <img alt="Logo de Gov Co" class="gov-co-logo-pie-mesa" src="/images/footer/header_govco.png">
+
+                <a class="text-white text-align-right" href="https://www.gov.co" target="_blank">
+                    Conoce GOV.CO aquí
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- bootstrap scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="js/maestra.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
