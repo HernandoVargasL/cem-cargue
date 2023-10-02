@@ -125,7 +125,7 @@ section {
 .cover::before {
     content: "";
     top: 40px;
-    background: url(./images/assets/triangleBlue.svg);
+    background: url(../images/assets/triangleBlue.svg);
     width: 418px;
     height: 624px;
     display: flex;
